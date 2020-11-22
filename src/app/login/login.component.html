@@ -1,0 +1,30 @@
+
+
+<body style = "background-color: #FAFAFA;"> 
+    <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto; margin-top: 50px;">
+        <h2 style="margin-left: auto; margin-right: auto; margin-top: 10px;">AE Services</h2>
+        <div class="card-body">
+            <form [formGroup]="loginForm">
+                <div class="form-group">
+                    <input  type="email" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Usuario" formControlName = "usuario" required>
+                </div>
+                <div class="form-group">
+                    <input  type="password" class="form-control" id="password" placeholder="Contraseña" formControlName = "password" required>
+                </div>
+                <button type="submit" class="btn btn-primary form-control" location.href="admin-companies.html" (click)="entrar()">Inciar sesión</button>
+                <hr>
+                <a style = "font-size: small;  margin-left: auto; margin-right: auto;">¿Olvidaste tu contraseña?</a>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="card" style="width: 22rem; margin-left: auto; margin-right: auto;">
+        <div class="card-body">
+            <div class="form-inline">
+            <p style = "font-size: medium; padding: 5px;">¿No tienes cuenta?</p>
+            <p><a style = "font-size:medium; color: #0095F6;  padding: 5px;" location.href="registro.html" (click)="registrar()"> Regístrate</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
